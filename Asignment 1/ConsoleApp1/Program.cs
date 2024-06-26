@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -26,7 +26,7 @@ namespace StudentManagement
                 Console.WriteLine("7. Display Students born in 2000");
                 Console.WriteLine("8. Display Students born after 2000");
                 Console.WriteLine("9. Display Students born before 2000");
-                Console.WriteLine("10. Display Students born in Ha Noi");
+                Console.WriteLine("10. First Student born in Ha Noi");
                 Console.WriteLine("11. Save and Exit");
                 Console.Write("Choose an option: ");
                 int choice = int.Parse(Console.ReadLine());
@@ -46,7 +46,8 @@ namespace StudentManagement
                         DisplayStudents(Males(students));
                         break;
                     case 5:
-                        DisplayOldestStudent(students);
+                        Console.WriteLine("Oldest Student: ");
+                        DisplayStudent(OldestStudent(students));
                         break;
                     case 6:
                         DisplayFullNames(students);
@@ -64,8 +65,8 @@ namespace StudentManagement
                         DisplayStudents(YearLesser2000(students));
                         break;
                     case 10:
-                        Console.WriteLine("Students born in Ha Noi: ");
-                        DisplayStudents(Hanoian(students));
+                        Console.WriteLine("First student born in Ha Noi: ");
+                        DisplayStudent(FirstHanoian(students));
                         break;
                     case 11:
                         SaveStudents(filePath, students);
@@ -125,6 +126,23 @@ namespace StudentManagement
                                   student.PlaceOfBirth, student.Mobile, student.IsGraduated ? "Yes" : "No", student.Age);
             }
         }
+
+        static void DisplayStudent(Student student)
+        {
+            if(student == null){
+                Console.WriteLine("No students fit such requirements");
+            }
+            else{
+                Console.WriteLine("{0,-8} {1,-20} {2, -12} {3,-15} {4,-8} {5,-18} {6,-15} {7,-12} {8,-5}", 
+                                "ID", "Last Name", "First Name","Date of Birth", "Gender", "Place of Birth", "Mobile", "Graduated", "Age");
+                
+                Console.WriteLine("{0,-8} {1,-20} {2, -12} {3,-15:dd/MM/yyyy} {4,-8} {5,-18} {6,-15} {7,-12} {8,-5}", 
+                                    student.ID, student.LastName, student.FirstName, student.DateOfBirth, student.Gender, 
+                                    student.PlaceOfBirth, student.Mobile, student.IsGraduated ? "Yes" : "No", student.Age);
+            }
+        
+        }
+
 
         static void AddStudent(List<Student> students)
         {
@@ -187,25 +205,21 @@ namespace StudentManagement
             return students.Where(s => s.DateOfBirth.Year < 2000).ToList();
         }
 
-        static List<Student> Hanoian(List<Student> students)
+        static Student FirstHanoian(List<Student> students)
         {
-            return students.Where(s => s.PlaceOfBirth == "Ha Noi").ToList();
+            int i = 0;
+            while(i < students.Count())
+            {
+                if (students[i].PlaceOfBirth == "Ha Noi"){
+                    return students[i];
+                }
+                i++;
+            }
+            return null;
         }
-        static void DisplayOldestStudent(List<Student> students)
+        static Student OldestStudent(List<Student> students)
         {
-            Student oldest = students.OrderBy(s => s.DateOfBirth).FirstOrDefault();
-            if (oldest != null)
-            {
-                Console.WriteLine("Oldest Student:");
-                Console.WriteLine("{0,-8} {1,-20} {2, -12} {3,-15} {4,-8} {5,-18} {6,-15} {7,-12} {8,-5}", "ID", "Last Name", "First Name","Date of Birth", "Gender", "Place of Birth", "Mobile", "Graduated", "Age");
-                Console.WriteLine("{0,-8} {1,-20} {2, -12} {3,-15:dd/MM/yyyy} {4,-8} {5,-18} {6,-15} {7,-12} {8,-5}", 
-                                  oldest.ID, oldest.LastName, oldest.FirstName, oldest.DateOfBirth, oldest.Gender, 
-                                  oldest.PlaceOfBirth, oldest.Mobile, oldest.IsGraduated ? "Yes" : "No", oldest.Age);
-            }
-            else
-            {
-                Console.WriteLine("No students found.");
-            }
+            return students.OrderBy(s => s.DateOfBirth).FirstOrDefault();
         }
 
         static List<string> GetFullNames(List<Student> students)
