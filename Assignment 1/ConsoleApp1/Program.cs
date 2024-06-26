@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -18,16 +18,14 @@ namespace StudentManagement
             {
                 Console.WriteLine("Student Management System");
                 Console.WriteLine("1. Display Students");
-                Console.WriteLine("2. Add Student");
-                Console.WriteLine("3. Remove Student by ID");
-                Console.WriteLine("4. List of male students");
-                Console.WriteLine("5. Oldest Student");
-                Console.WriteLine("6. Display Full Names");
-                Console.WriteLine("7. Display Students born in 2000");
-                Console.WriteLine("8. Display Students born after 2000");
-                Console.WriteLine("9. Display Students born before 2000");
-                Console.WriteLine("10. First Student born in Ha Noi");
-                Console.WriteLine("11. Save and Exit");
+                Console.WriteLine("2. List of male students");
+                Console.WriteLine("3. Oldest Student");
+                Console.WriteLine("4. Display Full Names");
+                Console.WriteLine("5. Display Students born in 2000");
+                Console.WriteLine("6. Display Students born after 2000");
+                Console.WriteLine("7. Display Students born before 2000");
+                Console.WriteLine("8. First Student born in Ha Noi");
+                Console.WriteLine("9. Save and Exit");
                 Console.Write("Choose an option: ");
                 int choice = int.Parse(Console.ReadLine());
 
@@ -37,39 +35,33 @@ namespace StudentManagement
                         DisplayStudents(students);
                         break;
                     case 2:
-                        AddStudent(students);
-                        break;
-                    case 3:
-                        RemoveStudent(students);
-                        break;
-                    case 4:
                         Console.WriteLine("Male Students: ");
                         DisplayStudents(Males(students));
                         break;
-                    case 5:
+                    case 3:
                         Console.WriteLine("Oldest Student: ");
                         DisplayStudent(OldestStudent(students));
                         break;
-                    case 6:
+                    case 4:
                         DisplayFullNames(students);
                         break;
-                    case 7:
+                    case 5:
                         Console.WriteLine("Students born in year 2000: ");
                         DisplayStudents(Year2000(students));
                         break;
-                    case 8:
+                    case 6:
                         Console.WriteLine("Students born after 2000: ");
                         DisplayStudents(YearGreater2000(students));
                         break;
-                    case 9:
+                    case 7:
                         Console.WriteLine("Students born before 2000: ");
                         DisplayStudents(YearLesser2000(students));
                         break;
-                    case 10:
+                    case 8:
                         Console.WriteLine("First student born in Ha Noi: ");
                         DisplayStudent(FirstHanoian(students));
                         break;
-                    case 11:
+                    case 9:
                         SaveStudents(filePath, students);
                         exit = true;
                         break;
@@ -144,66 +136,56 @@ namespace StudentManagement
         
         }
 
-
-        static void AddStudent(List<Student> students)
-        {
-            Student newStudent = new Student();
-
-            Console.Write("Enter ID: ");
-            newStudent.ID = int.Parse(Console.ReadLine());
-            Console.Write("Enter LastName: ");
-            newStudent.LastName = Console.ReadLine();
-            Console.Write("Enter FirstName: ");
-            newStudent.FirstName = Console.ReadLine();
-            Console.Write("Enter Date of Birth (dd/MM/yyyy): ");
-            newStudent.DateOfBirth = DateTime.ParseExact(Console.ReadLine(), new[] { "dd/MM/yyyy" }, CultureInfo.InvariantCulture, DateTimeStyles.None);
-            Console.Write("Enter Gender: ");
-            newStudent.Gender = Console.ReadLine();
-            Console.Write("Enter Place of Birth: ");
-            newStudent.PlaceOfBirth = Console.ReadLine();
-            Console.Write("Enter Mobile: ");
-            newStudent.Mobile = Console.ReadLine();
-            Console.Write("Is Graduated (true/false): ");
-            newStudent.IsGraduated = bool.Parse(Console.ReadLine());
-
-            students.Add(newStudent);
-        }
-
-        static void RemoveStudent(List<Student> students)
-        {
-            Console.Write("Enter the ID of the student to remove: ");
-            int id = int.Parse(Console.ReadLine());
-
-            Student studentToRemove = students.FirstOrDefault(s => s.ID == id);
-            if (studentToRemove != null)
-            {
-                students.Remove(studentToRemove);
-                Console.WriteLine("Student removed successfully.");
-            }
-            else
-            {
-                Console.WriteLine("Student with the specified ID not found.");
-            }
-        }
-
         static List<Student> Males(List<Student> students)
         {
-            return students.Where(s => s.Gender == "Male").ToList();
+            List<Student> maleStudents = new List<Student>();
+            foreach (var student in students)
+            {
+                if (student.Gender == "Male")
+                {
+                    maleStudents.Add(student);
+                }
+            }
+            return maleStudents;
         }
 
         static List<Student> Year2000(List<Student> students)
         {
-            return students.Where(s => s.DateOfBirth.Year == 2000).ToList();
+            List<Student> studentsIn2000 = new List<Student>();
+            foreach (var student in students)
+            {
+                if (student.DateOfBirth.Year == 2000)
+                {
+                    studentsIn2000.Add(student);
+                }
+            }
+            return studentsIn2000;
         }
 
         static List<Student> YearGreater2000(List<Student> students)
         {
-            return students.Where(s => s.DateOfBirth.Year > 2000).ToList();
+            List<Student> studentsAfter2000 = new List<Student>();
+            foreach (var student in students)
+            {
+                if (student.DateOfBirth.Year > 2000)
+                {
+                    studentsAfter2000.Add(student);
+                }
+            }
+            return studentsAfter2000;
         }
 
         static List<Student> YearLesser2000(List<Student> students)
         {
-            return students.Where(s => s.DateOfBirth.Year < 2000).ToList();
+            List<Student> studentsAfter2000 = new List<Student>();
+            foreach (var student in students)
+            {
+                if (student.DateOfBirth.Year < 2000)
+                {
+                    studentsAfter2000.Add(student);
+                }
+            }
+            return studentsAfter2000;
         }
 
         static Student FirstHanoian(List<Student> students)
@@ -220,12 +202,30 @@ namespace StudentManagement
         }
         static Student OldestStudent(List<Student> students)
         {
-            return students.OrderBy(s => s.DateOfBirth).FirstOrDefault();
+            if (students.Count == 0)
+            {
+                return null;
+            }
+
+            Student oldestStudent = students[0];
+            foreach (var student in students)
+            {
+                if (student.DateOfBirth < oldestStudent.DateOfBirth)
+                {
+                    oldestStudent = student;
+                }
+            }
+            return oldestStudent;
         }
 
         static List<string> GetFullNames(List<Student> students)
         {
-            return students.Select(s => $"{s.LastName} {s.FirstName}").ToList();
+            List<string> fullNames = new List<string>();
+            foreach (var student in students)
+            {
+                fullNames.Add($"{student.LastName} {student.FirstName}");
+            }
+            return fullNames;
         }
 
         static void DisplayFullNames(List<Student> students)
