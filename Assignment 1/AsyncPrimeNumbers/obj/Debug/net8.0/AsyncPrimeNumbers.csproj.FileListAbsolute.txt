@@ -1,0 +1,14 @@
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\bin\Debug\net8.0\AsyncPrimeNumbers.exe
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\bin\Debug\net8.0\AsyncPrimeNumbers.deps.json
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\bin\Debug\net8.0\AsyncPrimeNumbers.runtimeconfig.json
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\bin\Debug\net8.0\AsyncPrimeNumbers.dll
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\bin\Debug\net8.0\AsyncPrimeNumbers.pdb
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\AsyncPrimeNumbers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\AsyncPrimeNumbers.AssemblyInfoInputs.cache
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\AsyncPrimeNumbers.AssemblyInfo.cs
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\AsyncPrimeNumbers.csproj.CoreCompileInputs.cache
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\AsyncPrimeNumbers.dll
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\refint\AsyncPrimeNumbers.dll
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\AsyncPrimeNumbers.pdb
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\AsyncPrimeNumbers.genruntimeconfig.cache
+D:\Study\University\Internship\Assignment 1\AsyncPrimeNumbers\obj\Debug\net8.0\ref\AsyncPrimeNumbers.dll
