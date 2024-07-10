@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudentManagementLINQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e00ff8fe73c8bfa8aa23bb454714895cd5fbd33")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudentManagementLINQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudentManagementLINQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

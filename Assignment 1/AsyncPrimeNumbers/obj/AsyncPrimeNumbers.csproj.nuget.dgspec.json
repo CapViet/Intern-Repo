@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\University\\Internship\\Assignment 1\\AsyncPrimeNumbers\\AsyncPrimeNumbers.csproj": {}
+    "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\AsyncPrimeNumbers\\AsyncPrimeNumbers.csproj": {}
   },
   "projects": {
-    "D:\\Study\\University\\Internship\\Assignment 1\\AsyncPrimeNumbers\\AsyncPrimeNumbers.csproj": {
+    "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\AsyncPrimeNumbers\\AsyncPrimeNumbers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\University\\Internship\\Assignment 1\\AsyncPrimeNumbers\\AsyncPrimeNumbers.csproj",
+        "projectUniqueName": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\AsyncPrimeNumbers\\AsyncPrimeNumbers.csproj",
         "projectName": "AsyncPrimeNumbers",
-        "projectPath": "D:\\Study\\University\\Internship\\Assignment 1\\AsyncPrimeNumbers\\AsyncPrimeNumbers.csproj",
+        "projectPath": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\AsyncPrimeNumbers\\AsyncPrimeNumbers.csproj",
         "packagesPath": "C:\\Users\\KIEN TRUNG\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\University\\Internship\\Assignment 1\\AsyncPrimeNumbers\\obj\\",
+        "outputPath": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\AsyncPrimeNumbers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
