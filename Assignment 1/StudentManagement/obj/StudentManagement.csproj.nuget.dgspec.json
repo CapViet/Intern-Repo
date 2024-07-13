@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\StudentManagement\\StudentManagement.csproj": {}
+    "D:\\Study\\University\\Internship\\Git Repo\\Intern-Repo\\Assignment 1\\StudentManagement\\StudentManagement.csproj": {}
   },
   "projects": {
-    "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\StudentManagement\\StudentManagement.csproj": {
+    "D:\\Study\\University\\Internship\\Git Repo\\Intern-Repo\\Assignment 1\\StudentManagement\\StudentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\StudentManagement\\StudentManagement.csproj",
+        "projectUniqueName": "D:\\Study\\University\\Internship\\Git Repo\\Intern-Repo\\Assignment 1\\StudentManagement\\StudentManagement.csproj",
         "projectName": "StudentManagement",
-        "projectPath": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\StudentManagement\\StudentManagement.csproj",
+        "projectPath": "D:\\Study\\University\\Internship\\Git Repo\\Intern-Repo\\Assignment 1\\StudentManagement\\StudentManagement.csproj",
         "packagesPath": "C:\\Users\\KIEN TRUNG\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\StudentManagement\\obj\\",
+        "outputPath": "D:\\Study\\University\\Internship\\Git Repo\\Intern-Repo\\Assignment 1\\StudentManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

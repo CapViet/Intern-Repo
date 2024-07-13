@@ -12,3 +12,18 @@ D:\Study\University\Internship\Assignment 1\StudentManagementLINQ\obj\Debug\net8
 D:\Study\University\Internship\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.pdb
 D:\Study\University\Internship\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.genruntimeconfig.cache
 D:\Study\University\Internship\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\ref\StudentManagementLINQ.dll
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\bin\Debug\net8.0\StudentManagementLINQ.exe
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\bin\Debug\net8.0\StudentManagementLINQ.deps.json
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\bin\Debug\net8.0\StudentManagementLINQ.runtimeconfig.json
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\bin\Debug\net8.0\StudentManagementLINQ.dll
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\bin\Debug\net8.0\StudentManagementLINQ.pdb
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.AssemblyInfoInputs.cache
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.AssemblyInfo.cs
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.csproj.CoreCompileInputs.cache
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.sourcelink.json
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.dll
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\refint\StudentManagementLINQ.dll
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.pdb
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\StudentManagementLINQ.genruntimeconfig.cache
+D:\Study\University\Internship\Git Repo\Intern-Repo\Assignment 1\StudentManagementLINQ\obj\Debug\net8.0\ref\StudentManagementLINQ.dll

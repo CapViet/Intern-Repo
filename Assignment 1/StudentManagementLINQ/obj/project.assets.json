@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\StudentManagementLINQ\\StudentManagementLINQ.csproj",
+      "projectUniqueName": "D:\\Study\\University\\Internship\\Git Repo\\Intern-Repo\\Assignment 1\\StudentManagementLINQ\\StudentManagementLINQ.csproj",
       "projectName": "StudentManagementLINQ",
-      "projectPath": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\StudentManagementLINQ\\StudentManagementLINQ.csproj",
+      "projectPath": "D:\\Study\\University\\Internship\\Git Repo\\Intern-Repo\\Assignment 1\\StudentManagementLINQ\\StudentManagementLINQ.csproj",
       "packagesPath": "C:\\Users\\KIEN TRUNG\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\University\\Internship\\Assignments\\Intern-Repo\\Assignment 1\\StudentManagementLINQ\\obj\\",
+      "outputPath": "D:\\Study\\University\\Internship\\Git Repo\\Intern-Repo\\Assignment 1\\StudentManagementLINQ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
