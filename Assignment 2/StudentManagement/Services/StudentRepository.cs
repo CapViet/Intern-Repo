@@ -54,93 +54,21 @@ namespace StudentManagement.Services
             return students;
         }
 
-        public List<Student> GetAllStudents() => _students ?? new List<Student>();
+        public List<Student> GetAllStudents() => _students;
 
-        public List<Student> GetMaleStudents()
-        {
-            if (_students == null)
-            {
-                return new List<Student>();
-            }
+        public List<Student> GetMaleStudents() => _students.Where(s => s.Gender == "Male").ToList();
 
-            return _students.Where(s => s.Gender?.Equals("Male", StringComparison.OrdinalIgnoreCase) ?? false).ToList();
-        }
+        public Student GetOldestStudent() => _students.OrderBy(s => s.DateOfBirth).FirstOrDefault();
 
-        public Student GetOldestStudent()
-        {
-            if (_students == null || !_students.Any())
-            {
-                return null;
-            }
+        public List<string> GetFullNames() => _students.Select(s => $"{s.LastName} {s.FirstName}").ToList();
 
-            return _students.OrderBy(s => s.DateOfBirth).FirstOrDefault();
-        }
+        public List<Student> GetStudentsBornIn2000() => _students.Where(s => s.DateOfBirth.Year == 2000).ToList();
 
-        public List<string> GetFullNames()
-        {
-            if (_students == null)
-            {
-                return new List<string>();
-            }
+        public List<Student> GetStudentsBornAfter2000() => _students.Where(s => s.DateOfBirth.Year > 2000).ToList();
 
-            return _students.Select(s => $"{s.LastName} {s.FirstName}").Where(name => !string.IsNullOrWhiteSpace(name)).ToList();
-        }
+        public List<Student> GetStudentsBornBefore2000() => _students.Where(s => s.DateOfBirth.Year < 2000).ToList();
 
-        public List<Student> GetStudentsBornIn2000()
-        {
-            if (_students == null)
-            {
-                return new List<Student>();
-            }
+        public Student GetFirstStudentBornInHanoi() => _students.FirstOrDefault(s => s.PlaceOfBirth == "Ha Noi");
 
-            return _students.Where(s => s.DateOfBirth.Year == 2000).ToList();
-        }
-
-        public List<Student> GetStudentsBornAfter2000()
-        {
-            if (_students == null)
-            {
-                return new List<Student>();
-            }
-
-            return _students.Where(s => s.DateOfBirth.Year > 2000).ToList();
-        }
-
-        public List<Student> GetStudentsBornBefore2000()
-        {
-            if (_students == null)
-            {
-                return new List<Student>();
-            }
-
-            return _students.Where(s => s.DateOfBirth.Year < 2000).ToList();
-        }
-
-        public Student GetFirstStudentBornInHanoi()
-        {
-            if (_students == null)
-            {
-                return null;
-            }
-
-            return _students.FirstOrDefault(s => s.PlaceOfBirth?.Equals("Ha Noi", StringComparison.OrdinalIgnoreCase) ?? false);
-        }
-
-        public void SaveStudents()
-        {
-            if (_students == null)
-            {
-                return;
-            }
-
-            using (var writer = new StreamWriter(_filePath))
-            {
-                writer.WriteLine("ID,LastName,FirstName,DateOfBirth,Gender,PlaceOfBirth,Mobile,IsGraduated");
-                foreach (var student in _students)
-                {
-                    writer.WriteLine($"{student.ID},{student.LastName},{student.FirstName},{student.DateOfBirth:dd/MM/yyyy},{student.Gender},{student.PlaceOfBirth},{student.Mobile},{student.IsGraduated}");
-                }
-            }
-        }
     }
 }

@@ -13,6 +13,5 @@ namespace StudentManagement.Services
         List<Student> GetStudentsBornAfter2000();
         List<Student> GetStudentsBornBefore2000();
         Student GetFirstStudentBornInHanoi();
-        void SaveStudents();
     }
 }
