@@ -1,0 +1,10 @@
+@model IEnumerable<string>
+
+<h1>Full Names</h1>
+<ul>
+    @foreach (var name in Model)
+    {
+        <li>@name</li>
+    }
+</ul>
+<a asp-action="Index" class="btn btn-primary">Back to Student Management</a>
