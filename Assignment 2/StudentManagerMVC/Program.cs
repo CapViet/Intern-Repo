@@ -1,6 +1,7 @@
 using StudentManagerMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using StudentManagerMVC.Services;
+using StudentManagerMVC.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Register repository
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 // Register the IStudentService with its implementation
 builder.Services.AddScoped<IStudentService, StudentService>();
 
