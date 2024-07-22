@@ -1,8 +1,6 @@
 ﻿// StudentService.cs
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using StudentManagerMVC.Data;
 using StudentManagerMVC.Models;
+using StudentManagerMVC.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,17 +9,16 @@ namespace StudentManagerMVC.Services
 {
     public class StudentService : IStudentService
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IStudentRepository _studentRepository;
 
-        public StudentService(ApplicationDbContext context)
+        public StudentService(IStudentRepository studentRepository)
         {
-            _context = context;
+            _studentRepository = studentRepository;
         }
 
         public async Task<IEnumerable<Student>> GetStudentsAsync(string filterField, string filterCriteria, string filterValue)
         {
-            
-            var students = from s in _context.Students select s;
+            var students = await _studentRepository.GetAllAsync();
 
             if (!string.IsNullOrEmpty(filterField))
             {
@@ -60,45 +57,37 @@ namespace StudentManagerMVC.Services
                 }
             }
 
-
-            return await students.ToListAsync();
+            return students;
         }
 
         public async Task<Student> GetStudentByIdAsync(int id)
         {
-            return await _context.Students.FirstOrDefaultAsync(s => s.ID == id);
+            return await _studentRepository.GetByIdAsync(id);
         }
 
         public async Task AddStudentAsync(Student student)
         {
-            _context.Add(student);
-            await _context.SaveChangesAsync();
+            await _studentRepository.AddAsync(student);
         }
 
         public async Task UpdateStudentAsync(Student student)
         {
-            _context.Update(student);
-            await _context.SaveChangesAsync();
+            await _studentRepository.UpdateAsync(student);
         }
 
         public async Task DeleteStudentAsync(int id)
         {
-            var student = await _context.Students.FindAsync(id);
-            if (student != null)
-            {
-                _context.Students.Remove(student);
-                await _context.SaveChangesAsync();
-            }
+            await _studentRepository.DeleteAsync(id);
         }
 
         public async Task<bool> StudentExistsAsync(int id)
         {
-            return await _context.Students.AnyAsync(e => e.ID == id);
+            return await _studentRepository.ExistsAsync(id);
         }
 
         public async Task<IEnumerable<string>> GetDistinctPlacesOfBirthAsync()
         {
-            return await _context.Students.Select(s => s.PlaceOfBirth).Distinct().ToListAsync();
+            return await _studentRepository.GetDistinctPlacesOfBirthAsync();
         }
     }
 }
