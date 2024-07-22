@@ -39,6 +39,6 @@ namespace StudentManagerMVC.Models
         public bool IsGraduated { get; set; }
 
         [Display(Name = "Full Name")]
-        public string FullName => $"{FirstName} {LastName}";
+        public string FullName => $"{LastName} {FirstName}";
     }
 }

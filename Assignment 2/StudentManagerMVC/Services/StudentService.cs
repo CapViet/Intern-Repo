@@ -20,6 +20,7 @@ namespace StudentManagerMVC.Services
 
         public async Task<IEnumerable<Student>> GetStudentsAsync(string filterField, string filterCriteria, string filterValue)
         {
+            
             var students = from s in _context.Students select s;
 
             if (!string.IsNullOrEmpty(filterField))
@@ -36,17 +37,12 @@ namespace StudentManagerMVC.Services
                         students = students.OrderBy(s => s.DateOfBirth).Take(1);
                         break;
                     case "FullName":
-                        if (!string.IsNullOrEmpty(filterCriteria))
+                        if (!string.IsNullOrEmpty(filterValue))
                         {
-                            var names = filterCriteria.Split(' ');
-                            if (names.Length == 2)
-                            {
-                                students = students.Where(s => s.FirstName == names[0] && s.LastName == names[1]);
-                            }
-                            else if (names.Length == 1)
-                            {
-                                students = students.Where(s => s.FirstName == names[0] || s.LastName == names[0]);
-                            }
+                            string filterValueLower = filterValue.ToLower();
+                            students = students.Where(s =>
+                                (s.FirstName + " " + s.LastName).ToLower().Contains(filterValueLower) ||
+                                (s.LastName + " " + s.FirstName).ToLower().Contains(filterValueLower));
                         }
                         break;
                     case "BirthYear":
