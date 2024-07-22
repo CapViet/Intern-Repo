@@ -1,16 +1,27 @@
 using StudentManagerMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using StudentManagerMVC.Services;
+using Microsoft.AspNetCore.Identity;
+using StudentManagerMVC.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddRazorPages();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddDbContext<AuthenticationContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddDefaultIdentity<StudentManagerMVCUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<AuthenticationContext>();
 
 // Register the IStudentService with its implementation
 builder.Services.AddScoped<IStudentService, StudentService>();
@@ -35,5 +46,5 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+app.MapRazorPages();
 app.Run();
