@@ -18,6 +18,7 @@ namespace StudentManagerMVC.Controllers
         // GET: Students
         public async Task<IActionResult> Index(string filterField, string filterCriteria, string filterValue)
         {
+            
             var students = await _studentService.GetStudentsAsync(filterField, filterCriteria, filterValue);
             var distinctPlacesOfBirth = await _studentService.GetDistinctPlacesOfBirthAsync();
 

@@ -21,14 +21,14 @@
     </div>
     <div class="form-group" id="genderCriteriaGroup" style="display:none;">
         <label for="genderCriteria">Select Gender:</label>
-        <select id="genderCriteria" name="filterCriteria" class="form-control">
+        <select id="genderCriteria" name="filterCriteria" class="form-control" >
             <option value="Male">Male</option>
             <option value="Female">Female</option>
         </select>
     </div>
     <div class="form-group" id="placeOfBirthCriteriaGroup" style="display:none;">
         <label for="placeOfBirthCriteria">Select Place of Birth:</label>
-        <select id="placeOfBirthCriteria" name="filterCriteria" class="form-control">
+        <select id="placeOfBirthCriteria" name="filterCriteria" class="form-control" >
             @if (placesOfBirth != null)
             {
                 foreach (var place in placesOfBirth)
@@ -38,15 +38,18 @@
             }
         </select>
     </div>
-    <div class="form-group" id="filterValueGroup" style="display:none;">
-        <label for="filterValue">Enter Filter Value:</label>
-        <input type="text" id="filterValue" name="filterValue" class="form-control" />
-    </div>
     <div class="form-group" id="fullNameGroup" style="display:none;">
         <label for="fullName">Enter Full Name:</label>
-        <input type="text" id="fullName" name="filterCriteria" class="form-control" placeholder="Enter full name" />
+        <input type="text" id="fullName" name="filterValue" class="form-control" placeholder="Enter Full Name" />
     </div>
-    <button type="submit" class="btn btn-primary">Filter</button>
+    <div class="form-group" id="filterValueGroup" style="display:none;">
+        <label for="filterValue">Enter Filter Value:</label>
+        <input type="text" id="filterValue" name="filterValue" class="form-control" placeholder="Enter Birth Year" />
+    </div>
+    
+
+        
+    <button type="submit" class="btn btn-primary">Filter</button> <a asp-action="Index" class="btn btn-success">Back to Full List</a>
 </form>
 
 <table class="table">
@@ -101,18 +104,28 @@
         filterValueGroup.style.display = 'none';
         fullNameGroup.style.display = 'none';
 
+        // Reset names to avoid multiple inputs with the same name
+        document.getElementById('genderCriteria').name = '';
+        document.getElementById('placeOfBirthCriteria').name = '';
+        document.getElementById('filterValue').name = '';
+        document.getElementById('fullName').name = '';
+
         switch (this.value) {
             case 'Gender':
                 genderCriteriaGroup.style.display = 'block';
+                document.getElementById('genderCriteria').name = 'filterCriteria';
                 break;
             case 'BirthYear':
                 filterValueGroup.style.display = 'block';
+                document.getElementById('filterValue').name = 'filterValue';
                 break;
             case 'PlaceOfBirth':
                 placeOfBirthCriteriaGroup.style.display = 'block';
+                document.getElementById('placeOfBirthCriteria').name = 'filterCriteria';
                 break;
             case 'FullName':
                 fullNameGroup.style.display = 'block';
+                document.getElementById('fullName').name = 'filterValue';
                 break;
         }
     });
