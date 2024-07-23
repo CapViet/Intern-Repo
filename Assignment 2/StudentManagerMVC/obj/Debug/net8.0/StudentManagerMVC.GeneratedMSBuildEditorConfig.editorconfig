@@ -17,59 +17,111 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StudentManagerMVC
 build_property.RootNamespace = StudentManagerMVC
-build_property.ProjectDir = D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\
+build_property.ProjectDir = E:\Intern-Repo\Assignment 2\StudentManagerMVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC
+build_property.MSBuildProjectDirectory = E:\Intern-Repo\Assignment 2\StudentManagerMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Home/Index.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Models/RegisteredUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFJlZ2lzdGVyZWRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Account/LoginSuccessful.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpblN1Y2Nlc3NmdWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Account/RegistrationSuccessful.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXRpb25TdWNjZXNzZnVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Home/Privacy.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Shared/Error.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Scores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NvcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Students/Create.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Students/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Students/Delete.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Students/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Students/Details.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Students/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Students/Edit.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Students/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Students/Index.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/_ViewImports.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/_ViewStart.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/Internship/Assignments/Assignment 2/StudentManagerMVC/Views/Shared/_Layout.cshtml]
+[E:/Intern-Repo/Assignment 2/StudentManagerMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-go4gx9c2du

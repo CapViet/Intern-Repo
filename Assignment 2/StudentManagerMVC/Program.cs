@@ -2,6 +2,8 @@ using StudentManagerMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using StudentManagerMVC.Services;
 using StudentManagerMVC.Repositories;
+using Microsoft.AspNetCore.Identity;
+using StudentManagerMVC.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddDbContext<AuthenticationContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+builder.Services.AddDefaultIdentity<StudentManagerMVCUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<AuthenticationContext>();
 
 // Register repository
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
@@ -32,7 +39,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

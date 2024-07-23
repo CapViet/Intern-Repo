@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj": {}
+    "E:\\Intern-Repo\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj": {}
   },
   "projects": {
-    "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj": {
+    "E:\\Intern-Repo\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj",
+        "projectUniqueName": "E:\\Intern-Repo\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj",
         "projectName": "StudentManagerMVC",
-        "projectPath": "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj",
-        "packagesPath": "C:\\Users\\KIEN TRUNG\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\obj\\",
+        "projectPath": "E:\\Intern-Repo\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj",
+        "packagesPath": "C:\\Users\\Mai Phuong Nguyen\\.nuget\\packages\\",
+        "outputPath": "E:\\Intern-Repo\\Assignment 2\\StudentManagerMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KIEN TRUNG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mai Phuong Nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
