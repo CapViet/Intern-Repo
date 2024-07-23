@@ -1,9 +1,11 @@
 using StudentManagerMVC.Data;
 using Microsoft.EntityFrameworkCore;
-using StudentManagerMVC.Services;
-using StudentManagerMVC.Repositories;
 using Microsoft.AspNetCore.Identity;
 using StudentManagerMVC.Areas.Identity.Data;
+using StudentManagerMVC.Services.ScoreServ;
+using StudentManagerMVC.Repositories.StudentRepo;
+using StudentManagerMVC.Repositories.ScoresRepo;
+using StudentManagerMVC.Services.StudentServ;
 
 var builder = WebApplication.CreateBuilder(args);
 

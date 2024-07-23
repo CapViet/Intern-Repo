@@ -1,6 +1,6 @@
 ﻿using StudentManagerMVC.Models;
 
-namespace StudentManagerMVC.Repositories
+namespace StudentManagerMVC.Repositories.StudentRepo
 {
     public interface IStudentRepository
     {

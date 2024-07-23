@@ -3,7 +3,7 @@ using StudentManagerMVC.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace StudentManagerMVC.Services
+namespace StudentManagerMVC.Services.StudentServ
 {
     public interface IStudentService
     {

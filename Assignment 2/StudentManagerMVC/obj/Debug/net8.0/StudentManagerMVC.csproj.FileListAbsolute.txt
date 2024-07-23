@@ -1592,3 +1592,11 @@ D:\Study\University\Internship\Intern-Repo-register\Assignment 2\StudentManagerM
 D:\Study\University\Internship\Intern-Repo-register\Assignment 2\StudentManagerMVC\obj\Debug\net8.0\StudentManagerMVC.pdb
 D:\Study\University\Internship\Intern-Repo-register\Assignment 2\StudentManagerMVC\obj\Debug\net8.0\StudentManagerMVC.genruntimeconfig.cache
 D:\Study\University\Internship\Intern-Repo-register\Assignment 2\StudentManagerMVC\obj\Debug\net8.0\ref\StudentManagerMVC.dll
+D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Study\University\Internship\Assignments\Assignment 2\StudentManagerMVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

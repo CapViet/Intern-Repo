@@ -1,11 +1,7 @@
-﻿// StudentService.cs
-using StudentManagerMVC.Models;
-using StudentManagerMVC.Repositories;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using StudentManagerMVC.Models;
+using StudentManagerMVC.Repositories.StudentRepo;
 
-namespace StudentManagerMVC.Services
+namespace StudentManagerMVC.Services.StudentServ
 {
     public class StudentService : IStudentService
     {

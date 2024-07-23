@@ -2,20 +2,19 @@
 using static StudentManagerMVC.Models.ViewModel;
 using StudentManagerMVC.Data;
 using StudentManagerMVC.Models;
-using StudentManagerMVC.Services;
 using Microsoft.AspNetCore.Cors.Infrastructure;
+using StudentManagerMVC.Services.ScoreServ;
 
 namespace StudentManagerMVC.Controllers
 {
     public class ScoresController : Controller
     {
         private readonly IScoresService _scoresService;
-        private readonly IStudentService _studentService;
+    
 
-        public ScoresController(IScoresService scoresService, IStudentService studentService)
+        public ScoresController(IScoresService scoresService)
         {
             _scoresService = scoresService;
-            _studentService = studentService;
         }
 
         public IActionResult Index(string sortOrder)

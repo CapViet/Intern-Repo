@@ -2,9 +2,9 @@
 using StudentManagerMVC.Data;
 using StudentManagerMVC.Models;
 
-namespace StudentManagerMVC.Repositories
+namespace StudentManagerMVC.Repositories.StudentRepo
 {
-    public class StudentRepository: IStudentRepository
+    public class StudentRepository : IStudentRepository
     {
         private readonly ApplicationDbContext _context;
 

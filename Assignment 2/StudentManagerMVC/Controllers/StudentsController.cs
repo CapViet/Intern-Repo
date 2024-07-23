@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudentManagerMVC.Models;
-using StudentManagerMVC.Services;
+using StudentManagerMVC.Services.StudentServ;
 using System.Threading.Tasks;
 
 namespace StudentManagerMVC.Controllers

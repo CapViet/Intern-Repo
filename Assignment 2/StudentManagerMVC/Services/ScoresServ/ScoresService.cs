@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Cors.Infrastructure;
 using static StudentManagerMVC.Models.ViewModel;
-using StudentManagerMVC.Repositories;
 using StudentManagerMVC.Models;
+using StudentManagerMVC.Repositories.ScoresRepo;
 
-namespace StudentManagerMVC.Services
+namespace StudentManagerMVC.Services.ScoreServ
 {
     public class ScoresService : IScoresService
     {

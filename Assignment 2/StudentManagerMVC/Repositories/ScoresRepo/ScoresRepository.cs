@@ -5,7 +5,7 @@ using StudentManagerMVC.Models;
 using Microsoft.EntityFrameworkCore;
 using static StudentManagerMVC.Models.ViewModel;
 
-namespace StudentManagerMVC.Repositories
+namespace StudentManagerMVC.Repositories.ScoresRepo
 {
     public class ScoresRepository : IScoresRepository
     {
