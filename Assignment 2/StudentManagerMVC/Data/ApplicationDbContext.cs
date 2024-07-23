@@ -11,5 +11,7 @@ namespace StudentManagerMVC.Data
         }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<Scores> Scores { get; set; }
+
     }
 }

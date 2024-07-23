@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj": {}
+    "D:\\Study\\University\\Internship\\Intern-Repo-register\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj": {}
   },
   "projects": {
-    "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj": {
+    "D:\\Study\\University\\Internship\\Intern-Repo-register\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj",
+        "projectUniqueName": "D:\\Study\\University\\Internship\\Intern-Repo-register\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj",
         "projectName": "StudentManagerMVC",
-        "projectPath": "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj",
+        "projectPath": "D:\\Study\\University\\Internship\\Intern-Repo-register\\Assignment 2\\StudentManagerMVC\\StudentManagerMVC.csproj",
         "packagesPath": "C:\\Users\\KIEN TRUNG\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\University\\Internship\\Assignments\\Assignment 2\\StudentManagerMVC\\obj\\",
+        "outputPath": "D:\\Study\\University\\Internship\\Intern-Repo-register\\Assignment 2\\StudentManagerMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
