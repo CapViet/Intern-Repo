@@ -1,0 +1,38 @@
+﻿@model IEnumerable<StudentManagerMVC.Models.ViewModel.ScoresViewModel>
+
+@{
+    ViewData["Title"] = "Scores List";
+    var currentSort = ViewData["CurrentSort"] as string;
+}
+
+<h1>Scores List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["IDSortParm"]">ID</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["MathSortParm"]">Math Score</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["ChemSortParm"]">Chemistry Score</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["PhysSortParm"]">Physics Score</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var score in Model)
+        {
+            <tr>
+                <td>@score.ID</td>
+                <td>@score.MathScore</td>
+                <td>@score.ChemScore</td>
+                <td>@score.PhysScore</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -17,10 +17,32 @@ namespace StudentManagerMVC.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.0-preview.6.24327.4")
+                .HasAnnotation("ProductVersion", "8.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("StudentManagerMVC.Models.Scores", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("ChemScore")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MathScore")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PhysScore")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Scores");
+                });
 
             modelBuilder.Entity("StudentManagerMVC.Models.Student", b =>
                 {
@@ -65,6 +87,8 @@ namespace StudentManagerMVC.Migrations
 
                     b.ToTable("Students");
                 });
+
+            
 #pragma warning restore 612, 618
         }
     }
