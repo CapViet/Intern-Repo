@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StudentManagerMVC.Data;
 using StudentManagerMVC.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace StudentManagerMVC.Repositories.StudentRepo
 {
@@ -13,9 +16,9 @@ namespace StudentManagerMVC.Repositories.StudentRepo
             _context = context;
         }
 
-        public async Task<IEnumerable<Student>> GetAllAsync()
+        public IQueryable<Student> GetAll()
         {
-            return await _context.Students.ToListAsync();
+            return _context.Students.AsQueryable();
         }
 
         public async Task<Student> GetByIdAsync(int id)

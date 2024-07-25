@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Cors.Infrastructure;
-using static StudentManagerMVC.Models.ViewModel;
 using StudentManagerMVC.Models;
 using StudentManagerMVC.Repositories.ScoresRepo;
 
