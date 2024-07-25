@@ -1,5 +1,8 @@
 ﻿using StudentManagerMVC.Models;
 using StudentManagerMVC.Repositories.StudentRepo;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace StudentManagerMVC.Services.StudentServ
 {
@@ -12,9 +15,9 @@ namespace StudentManagerMVC.Services.StudentServ
             _studentRepository = studentRepository;
         }
 
-        public async Task<IEnumerable<Student>> GetStudentsAsync(string filterField, string filterCriteria, string filterValue)
+        public async Task<PaginatedList<Student>> GetStudentsAsync(string filterField, string filterCriteria, string filterValue, int pageNumber, int pageSize)
         {
-            var students = await _studentRepository.GetAllAsync();
+            var students = _studentRepository.GetAll();
 
             if (!string.IsNullOrEmpty(filterField))
             {
@@ -53,7 +56,7 @@ namespace StudentManagerMVC.Services.StudentServ
                 }
             }
 
-            return students;
+            return await PaginatedList<Student>.CreateAsync(students, pageNumber, pageSize);
         }
 
         public async Task<Student> GetStudentByIdAsync(int id)

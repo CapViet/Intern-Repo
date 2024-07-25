@@ -1,5 +1,5 @@
 ﻿using StudentManagerMVC.Models;
-using static StudentManagerMVC.Models.ViewModel;
+
 
 namespace StudentManagerMVC.Services.ScoreServ
 {

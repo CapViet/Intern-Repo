@@ -7,7 +7,7 @@ namespace StudentManagerMVC.Services.StudentServ
 {
     public interface IStudentService
     {
-        Task<IEnumerable<Student>> GetStudentsAsync(string filterField, string filterCriteria, string filterValue);
+        Task<PaginatedList<Student>> GetStudentsAsync(string filterField, string filterCriteria, string filterValue, int pageNumber, int pageSize);
         Task<Student> GetStudentByIdAsync(int id);
         Task AddStudentAsync(Student student);
         Task UpdateStudentAsync(Student student);

@@ -16,10 +16,9 @@ namespace StudentManagerMVC.Controllers
         }
 
         // GET: Students
-        public async Task<IActionResult> Index(string filterField, string filterCriteria, string filterValue)
+        public async Task<IActionResult> Index(string filterField, string filterCriteria, string filterValue, int pageNumber = 1, int pageSize = 10)
         {
-            
-            var students = await _studentService.GetStudentsAsync(filterField, filterCriteria, filterValue);
+            var students = await _studentService.GetStudentsAsync(filterField, filterCriteria, filterValue, pageNumber, pageSize);
             var distinctPlacesOfBirth = await _studentService.GetDistinctPlacesOfBirthAsync();
 
             ViewBag.PlacesOfBirth = distinctPlacesOfBirth;
